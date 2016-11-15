@@ -11,7 +11,7 @@ var roomList = [];
 var userSessionIdList = [];
 
 app.get('/',function (req,res){
-	var msg = 'BattleShip Server' + 'RoomCount :' + roomList.length + ' ConnetUserCount : ' + userSessionId.length;
+	var msg = "BattleShip Server" + "RoomCount :" + roomList.length + " ConnetUserCount :" + userSessionId.length;
    res.end(msg);
 });
 
