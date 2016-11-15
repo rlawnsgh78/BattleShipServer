@@ -12,7 +12,7 @@ var userSessionIdList = [];
 
 app.get('/',function (req,res){
 	//var msg = "BattleShip Server" + "RoomCount :" + roomList.length + " ConnetUserCount :" + userSessionId.length;
-   res.end('BattleShip Server');
+   res.end('BattleShip Server' + roomList.length);
 });
 
 io.on('connection', function (socket) {
