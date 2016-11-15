@@ -2,7 +2,6 @@ var http = require('http');
 var express = require('express');
 var app = express();
 var httpServer = http.createServer(app).listen(3000,function (req,res) {
-    console.log("서버 시작");
 });
 
 var io = require('socket.io').listen(httpServer);
@@ -11,7 +10,6 @@ var roomList = [];
 var userSessionIdList = [];
 
 app.get('/',function (req,res){
-   res.end('BattleShip Server');
 });
 
 io.on('connection', function (socket) {
