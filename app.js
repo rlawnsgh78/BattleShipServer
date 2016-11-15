@@ -11,8 +11,7 @@ var roomList = [];
 var userSessionIdList = [];
 
 app.get('/',function (req,res){
-	//var msg = "BattleShip Server" + "RoomCount :" + roomList.length + " ConnetUserCount :" + userSessionId.length;
-   res.end('BattleShip Server' + roomList.length);
+   res.end('BattleShip Server  RoomCount : ' + roomList.length + ' UserCount : ' + userSessionIdList.length);
 });
 
 io.on('connection', function (socket) {
