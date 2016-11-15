@@ -1,7 +1,7 @@
 var http = require('http');
 var express = require('express');
 var app = express();
-var httpServer = http.createServer(app).listen(3000,function (req,res) {
+var httpServer = http.createServer(app).listen(80,function (req,res) {
 });
 
 var io = require('socket.io').listen(httpServer);
